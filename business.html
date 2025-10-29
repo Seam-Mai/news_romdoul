@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Romdoul-News - Sports Center</title>
+    <title>Romdoul-News - Business & Markets</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="video.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
@@ -104,8 +104,8 @@
           </a>
 
           <a
-            href="business.html"
-            class="sidebar-item flex items-center gap-4 text-white px-5 py-4 rounded-xl group"
+            href="#"
+            class="sidebar-item flex items-center gap-4 text-white px-5 py-4 rounded-xl group bg-white/10"
           >
             <svg
               class="w-6 h-6 text-green-400 group-hover:scale-125 transition"
@@ -124,7 +124,7 @@
           </a>
 
           <a
-            href="entertainment.html"
+            href="#"
             class="sidebar-item flex items-center gap-4 text-white px-5 py-4 rounded-xl group"
           >
             <svg
@@ -355,7 +355,7 @@
             </li>
             <li>
               <a
-                href="investigations.html"
+                href="#"
                 class="hover:text-red-400 transition whitespace-nowrap"
                 >INVESTIGATIONS</a
               >
@@ -363,13 +363,13 @@
             <li>
               <a
                 href="Video.html"
-                class="text-red-400 transition whitespace-nowrap"
+                class="hover:text-red-400 transition whitespace-nowrap"
                 >VIDEO</a
               >
             </li>
             <li>
               <a
-                href="entertainment.html"
+                href="#"
                 class="hover:text-red-400 transition whitespace-nowrap"
                 >ENTERTAINMENT</a
               >
@@ -384,7 +384,7 @@
             <li>
               <a
                 href="business.html"
-                class="hover:text-red-400 transition whitespace-nowrap"
+                class="text-red-400 transition whitespace-nowrap"
                 >BUSINESS</a
               >
             </li>
@@ -431,87 +431,236 @@
         </div>
       </div>
     </header>
-    <!-- Main Content - SPORTS NEWS PAGE -->
+
+    <!-- Main Content -->
     <main class="container mx-auto px-4 py-10">
-      <!-- Hero Featured Match -->
-      <section class="featured-match mb-16 animate-fade-in-up">
+      <h1
+        class="text-5xl font-black headline text-gray-900 mb-8 border-b-4 border-yellow-400 pb-3"
+      >
+        Business & Markets
+      </h1>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+        <!-- Main Business Feature -->
         <div
-          class="relative overflow-hidden rounded-3xl shadow-2xl h-[600px] bg-gradient-to-br from-gray-900 via-black to-red-900"
+          class="lg:col-span-2 featured-article animate-fade-in-up cursor-pointer group"
         >
-          <!-- Replace image with video -->
-          <iframe
-            class="absolute inset-0 w-full h-full object-cover"
-            src="https://www.youtube.com/embed/JokmaXB3vqI?autoplay=1&mute=1&loop=1&playlist=JokmaXB3vqI"
-            title="El Clásico: Real Madrid vs Barcelona"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-
-          <!-- Overlay gradient -->
-          <div
-            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
-          ></div>
-
-          <!-- Text content & Buttons Wrapper -->
-          <div class="absolute bottom-0 left-0 right-0 p-10 text-white">
-            <div class="flex items-center gap-4 mb-4">
-              <span
-                class="badge bg-red-600 text-white px-4 py-1 rounded-full font-bold text-sm uppercase tracking-wider animate-pulse"
-                >LIVE NOW</span
-              >
-              <span
-                class="text-sm font-bold opacity-90 backdrop-blur-sm bg-black/30 px-3 py-1 rounded-full"
-                >⏱ 67' - 2ND HALF</span
-              >
+          <a href="#">
+            <div
+              class="relative overflow-hidden h-[550px] rounded-2xl shadow-xl"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1543286386-713bdd548da4?w=1000&h=700&fit=crop&auto=format"
+                alt="Cambodian Investment"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+              />
+              <div class="absolute inset-0 gradient-overlay"></div>
+              <div class="absolute top-0 right-0 m-6">
+                <span class="badge bg-yellow-400 text-gray-900"
+                  >INVESTMENT FOCUS</span
+                >
+              </div>
+              <div class="absolute bottom-0 left-0 right-0 p-10 text-white">
+                <div class="flex items-center gap-4 mb-4">
+                  <span class="badge bg-green-500 text-white">EXCLUSIVE</span>
+                  <span class="text-sm font-bold opacity-90"
+                    >📈 MARKET OPEN</span
+                  >
+                </div>
+                <h2
+                  class="text-5xl font-black headline leading-tight mb-4 group-hover:text-yellow-300 transition"
+                >
+                  Cambodia's Tech Startups See Record $100M Funding Boost
+                </h2>
+                <p class="text-xl text-gray-200 font-medium leading-relaxed">
+                  Venture Capital firms pour funds into local AI and FinTech
+                  sectors, signaling a new era of digital economy growth.
+                </p>
+              </div>
             </div>
-            <h1
-              class="text-6xl md:text-7xl font-black headline leading-tight mb-4 text-shadow-lg"
-            >
-              EL CLÁSICO: Real Madrid
-              <span class="text-yellow-400">2 - 1</span> Barcelona
-            </h1>
-            <p
-              class="text-xl md:text-2xl font-medium text-gray-200 mb-8 max-w-4xl"
-            >
-              Vinícius Jr. scores twice as Los Blancos take control at the
-              Bernabéu, shaking up the league title race with a dramatic late
-              goal.
-            </p>
+          </a>
+        </div>
 
-            <!-- Buttons for action -->
-            <div class="flex gap-4">
+        <!-- Sidebar Market Data & Top Stories -->
+        <div class="space-y-6 animate-fade-in-up">
+          <!-- Market Data Widget -->
+          <div
+            class="bg-white rounded-2xl p-6 shadow-xl border border-gray-100"
+          >
+            <h3
+              class="font-black text-2xl headline mb-4 text-gray-900 border-b pb-2"
+            >
+              PHNOM PENH EXCHANGE
+            </h3>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center text-lg font-bold">
+                <span>CSX Index</span>
+                <span class="text-green-600 flex items-center gap-1">
+                  +1.5%
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                    <path d="M7 14l5-5 5 5z" transform="rotate(180 12 12)" />
+                  </svg>
+                </span>
+              </div>
+              <div class="flex justify-between items-center text-sm">
+                <span class="text-gray-600">PPWSA (PPSC)</span>
+                <span class="font-bold text-red-600">-0.21</span>
+              </div>
+              <div class="flex justify-between items-center text-sm">
+                <span class="text-gray-600">GTI (GTI)</span>
+                <span class="font-bold text-green-600">+0.45</span>
+              </div>
+              <div class="flex justify-between items-center text-sm">
+                <span class="text-gray-600">PPSP (PPSP)</span>
+                <span class="font-bold text-green-600">+0.12</span>
+              </div>
+            </div>
+            <div class="mt-6 text-center">
               <a
                 href="#"
-                class="btn-live bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-xl flex items-center gap-3 transition transform hover:scale-105 shadow-xl shadow-red-500/50"
+                class="text-blue-600 font-bold text-sm hover:text-blue-800 transition"
+                >VIEW LIVE DATA →</a
               >
-                <span class="live-dot"></span> WATCH LIVE
-              </a>
-              <a
-                href="#"
-                class="btn-highlights bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white font-bold py-3 px-8 rounded-xl flex items-center gap-3 transition hover:shadow-xl"
-              >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7L8 5z" />
-                </svg>
-                HIGHLIGHTS
-              </a>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Top Sports Stories -->
-      <section class="top-stories mb-16">
-        <div class="flex justify-between items-center mb-8">
-          <h2 class="text-4xl font-black text-gray-900">Top Sports Stories</h2>
+          <!-- Top Business Stories -->
+          <div class="article-card rounded-2xl p-6 cursor-pointer hover-lift">
+            <div class="category-badge mb-3 bg-indigo-600 text-white">
+              FINANCE
+            </div>
+            <h3 class="font-black text-lg headline text-gray-900 leading-tight">
+              Central Bank Signals Potential Interest Rate Hike to Combat
+              Inflation
+            </h3>
+            <p class="text-sm text-gray-600 font-medium mt-2">1 hour ago</p>
+          </div>
+
+          <div class="article-card rounded-2xl p-6 cursor-pointer hover-lift">
+            <div class="category-badge mb-3 bg-yellow-600 text-white">
+              REAL ESTATE
+            </div>
+            <h3 class="font-black text-lg headline text-gray-900 leading-tight">
+              Luxury Condo Market in Phnom Penh Shows Signs of Cooling Down
+            </h3>
+            <p class="text-sm text-gray-600 font-medium mt-2">4 hours ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondary Business Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div
+          class="article-card rounded-2xl overflow-hidden cursor-pointer hover-lift"
+        >
+          <div class="relative h-56">
+            <img
+              src="https://images.unsplash.com/photo-1542838337-338b97d2830f?w=600&h=400&fit=crop&auto=format"
+              alt="E-commerce"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <div class="category-badge mb-3 bg-red-600 text-white">
+              E-COMMERCE
+            </div>
+            <h3 class="font-bold text-lg text-gray-900 leading-tight">
+              Local Online Retailer Expands to Vietnam and Thailand
+            </h3>
+            <p class="text-sm text-gray-600 font-medium mt-3">28 minutes ago</p>
+          </div>
+        </div>
+
+        <div
+          class="article-card rounded-2xl overflow-hidden cursor-pointer hover-lift"
+        >
+          <div class="relative h-56">
+            <img
+              src="https://images.unsplash.com/photo-1606857521015-46b0a7092923?w=600&h=400&fit=crop&auto=format"
+              alt="Small Business"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <div class="category-badge mb-3 bg-blue-600 text-white">
+              SMALL BUSINESS
+            </div>
+            <h3 class="font-bold text-lg text-gray-900 leading-tight">
+              Government Launches New Loan Program for SMEs
+            </h3>
+            <p class="text-sm text-gray-600 font-medium mt-3">2 hours ago</p>
+          </div>
+        </div>
+
+        <div
+          class="article-card rounded-2xl overflow-hidden cursor-pointer hover-lift"
+        >
+          <div class="relative h-56">
+            <img
+              src="https://images.unsplash.com/photo-1517436329011-2092c6861d85?w=600&h=400&fit=crop&auto=format"
+              alt="Energy"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-6">
+            <div class="category-badge mb-3 bg-green-700 text-white">
+              ENERGY
+            </div>
+            <h3 class="font-bold text-lg text-gray-900 leading-tight">
+              New Solar Farm Project to Power 15% of Capital
+            </h3>
+            <p class="text-sm text-gray-600 font-medium mt-3">5 hours ago</p>
+          </div>
+        </div>
+
+        <!-- Career/Hiring Callout -->
+        <div class="weather-widget cursor-pointer hover-lift">
+          <div
+            class="bg-gradient-to-br from-indigo-700 to-purple-600 text-white p-6"
+          >
+            <div class="flex items-center gap-4 mb-4">
+              <span class="text-5xl">💼</span>
+              <div>
+                <div class="font-black text-2xl headline">CAREERS</div>
+                <div class="text-sm text-indigo-200 font-semibold">
+                  FIND YOUR NEXT OPPORTUNITY
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6">
+            <div class="font-bold text-gray-900 mb-4 text-xl">
+              We're Hiring!
+            </div>
+            <p class="text-gray-600 text-sm mb-4">
+              Join the Romdoul-News business desk. We are looking for economic
+              analysts and financial reporters.
+            </p>
+            <a
+              href="#"
+              class="bg-indigo-600 text-white font-bold text-sm px-4 py-2 rounded-lg hover:bg-indigo-700 transition block text-center"
+            >
+              APPLY NOW
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Latest Business Stories Section -->
+      <div
+        class="bg-white rounded-2xl shadow-lg p-8 mb-12 border border-gray-100"
+      >
+        <div class="flex items-center justify-between mb-8">
+          <h2 class="text-4xl font-black headline text-gray-900">
+            In-Depth Analysis
+          </h2>
           <a
             href="#"
-            class="text-red-600 font-bold hover:text-red-800 flex items-center gap-2 transition"
+            class="text-blue-600 font-bold text-sm hover:text-blue-800 transition flex items-center gap-2"
           >
-            VIEW ALL
+            MORE ANALYSIS
             <svg
-              class="w-5 h-5"
+              class="w-4 h-4"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -527,421 +676,76 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Story 1 -->
-          <article
-            class="article-card bg-white rounded-2xl overflow-hidden shadow-lg group"
-          >
-            <div class="relative h-56 overflow-hidden">
+          <div class="group cursor-pointer hover-lift">
+            <div class="relative h-48 rounded-xl overflow-hidden mb-4">
               <img
-                src="https://assets.realmadrid.com/is/image/realmadrid/ND-PARTE-MEDICO-CARVAJAL_SG10549?$Desktop$"
-                alt="Carvajal Injury"
-                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-              />
-              <div class="play-overlay"></div>
-            </div>
-            <div class="p-6">
-              <span class="category-badge bg-red-600 text-white">LA LIGA</span>
-              <h3
-                class="font-bold text-xl mt-3 mb-2 line-clamp-2 group-hover:text-red-600 transition"
-              >
-                Carvajal Out for Season After Knee Surgery
-              </h3>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                Real Madrid confirms captain will miss 6-8 months following
-                successful arthroscopic procedure.
-              </p>
-              <p class="text-xs text-gray-500 mt-4 font-bold">3 hours ago</p>
-            </div>
-          </article>
-
-          <!-- Story 2 -->
-          <article
-            class="article-card bg-white rounded-2xl overflow-hidden shadow-lg group"
-          >
-            <div class="relative h-56 overflow-hidden">
-              <img
-                src="img/RAINTREE-Blogpost-Decathlon-thumbnail-08.webp"
-                alt="Cambodia Sports"
+                src="https://images.unsplash.com/photo-1590283603683-1111756543b5?w=600&h=400&fit=crop&auto=format"
+                alt="A man sitting in front of a laptop"
                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
             </div>
-            <div class="p-6">
-              <span class="category-badge bg-green-600 text-white"
-                >CAMBODIA</span
-              >
-              <h3
-                class="font-bold text-xl mt-3 mb-2 line-clamp-2 group-hover:text-green-600 transition"
-              >
-                Cambodia's Top 5 Sporting Triumphs
-              </h3>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                From SEA Games golds to historic Olympic moments — relive the
-                Kingdom's greatest victories.
-              </p>
-              <p class="text-xs text-gray-500 mt-4 font-bold">52 min ago</p>
+            <div class="category-badge mb-3 bg-yellow-600 text-white">
+              MARKET STRATEGY
             </div>
-          </article>
+            <h3
+              class="font-bold text-xl text-gray-900 leading-tight group-hover:text-blue-600 transition"
+            >
+              How Cambodian Businesses Can Navigate Global Supply Chain Issues
+            </h3>
+            <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+              Expert tips on diversification and local sourcing to mitigate
+              international economic risks.
+            </p>
+            <p class="text-xs text-gray-500 font-semibold mt-3">3 hours ago</p>
+          </div>
 
-          <!-- Story 3 -->
-          <article
-            class="article-card bg-white rounded-2xl overflow-hidden shadow-lg group"
-          >
-            <div class="relative h-56 overflow-hidden">
+          <div class="group cursor-pointer hover-lift">
+            <div class="relative h-48 rounded-xl overflow-hidden mb-4">
               <img
-                src="img/maxresdefault.jpg"
-                alt="NBA"
+                src="https://images.unsplash.com/photo-1557804506-669a039756c7?w=600&h=400&fit=crop&auto=format"
+                alt="Team meeting"
                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
-              <div class="play-overlay"></div>
             </div>
-            <div class="p-6">
-              <span class="category-badge bg-orange-600 text-white">EPL</span>
-              <h3
-                class="font-bold text-xl mt-3 mb-2 line-clamp-2 group-hover:text-orange-600 transition"
-              >
-                Aston Villa Stuns Man City at Villa Park
-              </h3>
-              <p class="text-gray-600 text-sm leading-relaxed">
-                Aston Villa defeated Manchester City 1–0. Matty Cash scored the
-                only goal of the game in the 19th minute, ending City's
-                nine-game unbeaten run.
-              </p>
-              <p class="text-xs text-gray-500 mt-4 font-bold">1 hour ago</p>
+            <div class="category-badge mb-3 bg-purple-600 text-white">
+              STARTUPS
             </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Video Highlights - UPGRADED TO YOUTUBE-STYLE GRID -->
-      <section class="video-highlights mb-16">
-        <h2 class="text-4xl font-black text-gray-900 mb-8">Video Highlights</h2>
-        <!-- Upgraded grid to 4 columns on large screens for a denser, modern look -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <!-- START OF UPGRADED VIDEO CARD TEMPLATE (12 Total) -->
-
-          <!-- Card 1 -->
-          <div class="video-card group cursor-pointer">
-            <div
-              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
+            <h3
+              class="font-bold text-xl text-gray-900 leading-tight group-hover:text-blue-600 transition"
             >
+              The Rise of Remote Work in Phnom Penh: A New Talent Landscape
+            </h3>
+            <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+              The shift to remote models is challenging traditional office
+              spaces but boosting productivity.
+            </p>
+            <p class="text-xs text-gray-500 font-semibold mt-3">7 hours ago</p>
+          </div>
+
+          <div class="group cursor-pointer hover-lift">
+            <div class="relative h-48 rounded-xl overflow-hidden mb-4">
               <img
-                src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
-                alt="Goal of the Week"
-                class="w-full h-full object-cover transition duration-500"
+                src="https://images.unsplash.com/photo-1593508512258-27818e9a22bc?w=600&h=400&fit=crop&auto=format"
+                alt="Cryptocurrency"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
-              <div class="play-button large"></div>
-              <!-- Video Duration Badge -->
-              <span
-                class="absolute bottom-2 right-2 bg-black/80 text-white text-xs font-semibold px-2 py-0.5 rounded-md"
-                >4:32</span
-              >
             </div>
-            <!-- Video Metadata -->
-            <div class="pt-3 px-1 space-y-1">
-              <h3
-                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
-              >
-                GOAL OF THE WEEK: 35-Yard Screamer vs Man United
-              </h3>
-              <p class="text-sm text-gray-600">The Football Studio</p>
-              <p class="text-xs text-gray-500">1.2M views • 2 hours ago</p>
+            <div class="category-badge mb-3 bg-cyan-600 text-white">
+              CRYPTOCURRENCY
             </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="video-card group cursor-pointer">
-            <div
-              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
+            <h3
+              class="font-bold text-xl text-gray-900 leading-tight group-hover:text-blue-600 transition"
             >
-              <img
-                src="https://i.ytimg.com/vi/9bZkp7q19f0/maxresdefault.jpg"
-                alt="Save of the Season"
-                class="w-full h-full object-cover transition duration-500"
-              />
-              <div class="play-button large"></div>
-              <span
-                class="absolute bottom-2 right-2 bg-black/80 text-white text-xs font-semibold px-2 py-0.5 rounded-md"
-                >11:05</span
-              >
-            </div>
-            <div class="pt-3 px-1 space-y-1">
-              <h3
-                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
-              >
-                SAVE OF THE SEASON: Impossible Reflex Double Save
-              </h3>
-              <p class="text-sm text-gray-600">Goalkeeper World</p>
-              <p class="text-xs text-gray-500">240K views • 1 day ago</p>
-            </div>
+              Understanding the New Regulations on Digital Assets
+            </h3>
+            <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+              A deep dive into how central bank new guidelines affect local
+              crypto traders and businesses.
+            </p>
+            <p class="text-xs text-gray-500 font-semibold mt-3">1 day ago</p>
           </div>
-
-          <!-- Card 3 -->
-          <div class="video-card group cursor-pointer">
-            <div
-              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
-            >
-              <img
-                src="https://i.ytimg.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
-                alt="Cambodia U23"
-                class="w-full h-full object-cover transition duration-500"
-              />
-              <div class="play-button large"></div>
-              <span
-                class="absolute bottom-2 right-2 bg-black/80 text-white text-xs font-semibold px-2 py-0.5 rounded-md"
-                >8:19</span
-              >
-            </div>
-            <div class="pt-3 px-1 space-y-1">
-              <h3
-                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
-              >
-                Cambodia U23: Road to SEA Games Glory - Full Docu
-              </h3>
-              <p class="text-sm text-gray-600">Khmer Sports TV</p>
-              <p class="text-xs text-gray-500">8.5M views • 3 weeks ago</p>
-            </div>
-          </div>
-
-          <!-- Card 4 - Fixed iframe -->
-          <div class="video-card group cursor-pointer">
-            <div
-              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
-            >
-              <iframe
-                class="w-full h-full transition duration-500"
-                src="https://www.youtube.com/embed/K_Ks7NK1DFU?si=Njic8V-EL43jiTeQ"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="pt-3 px-1 space-y-1">
-              <h3
-                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
-              >
-                NBA Top 10 Dunks of the Decade (Official)
-              </h3>
-              <p class="text-sm text-gray-600">NBA</p>
-              <p class="text-xs text-gray-500">30M views • 1 year ago</p>
-            </div>
-          </div>
-
-          <!-- Card 5 -->
-          <div class="video-card group cursor-pointer">
-            <div
-              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
-            >
-              <iframe
-                class="w-full h-full transition duration-500"
-                src="https://www.youtube.com/embed/PfvdUAaBQYc"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="pt-3 px-1 space-y-1">
-              <h3
-                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
-              >
-                BRUTAL FINISHES: Top 10 UFC Knockouts of 2024
-              </h3>
-              <p class="text-sm text-gray-600">UFC Official</p>
-              <p class="text-xs text-gray-500">5.1M views • 4 days ago</p>
-            </div>
-          </div>
-
-          <!-- Card 6 -->
-          <div class="video-card group cursor-pointer">
-            <div
-              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
-            >
-              <iframe
-                class="w-full h-full transition duration-500"
-                src="https://www.youtube.com/embed/WNcycoawhBI"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="pt-3 px-1 space-y-1">
-              <h3
-                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
-              >
-                Controversial Finish: F1 Final Lap Chaos at Monaco
-              </h3>
-              <p class="text-sm text-gray-600">Motorsport HQ</p>
-              <p class="text-xs text-gray-500">72K views • 3 hours ago</p>
-            </div>
-          </div>
-
-          <!-- Card 7 -->
-          <div class="video-card group cursor-pointer">
-            <div
-              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
-            >
-              <iframe
-                class="w-full h-full transition duration-500"
-                src="https://www.youtube.com/embed/jFF8FSPPoNQ"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="pt-3 px-1 space-y-1">
-              <h3
-                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
-              >
-                Unbelievable Rally: Djokovic vs Nadal US Open Final
-              </h3>
-              <p class="text-sm text-gray-600">Tennis Majors</p>
-              <p class="text-xs text-gray-500">990K views • 2 months ago</p>
-            </div>
-          </div>
-
-          <!-- Card 8 -->
-          <div class="video-card group cursor-pointer">
-            <div
-              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
-            >
-              <iframe
-                class="w-full h-full transition duration-500"
-                src="https://www.youtube.com/embed/NqdCusxmUFE"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="pt-3 px-1 space-y-1">
-              <h3
-                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
-              >
-                FULL MATCH: World Esports League Grand Finals
-              </h3>
-              <p class="text-sm text-gray-600">Gaming Arena</p>
-              <p class="text-xs text-gray-500">4.5M views • 1 week ago</p>
-            </div>
-          </div>
-
-          <!-- Card 9 -->
-          <div class="video-card group cursor-pointer">
-            <div
-              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
-            >
-              <iframe
-                class="w-full h-full transition duration-500"
-                src="https://www.youtube.com/embed/0Hcjgd8ETNY"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="pt-3 px-1 space-y-1">
-              <h3
-                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
-              >
-                Lionel Messi's Top 5 Greatest Free Kicks Ever
-              </h3>
-              <p class="text-sm text-gray-600">GOAT Highlights</p>
-              <p class="text-xs text-gray-500">18M views • 6 months ago</p>
-            </div>
-          </div>
-
-          <!-- Card 10 -->
-          <div class="video-card group cursor-pointer">
-            <div
-              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
-            >
-              <iframe
-                class="w-full h-full transition duration-500"
-                src="https://www.youtube.com/embed/JjNtYuG920Q"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="pt-3 px-1 space-y-1">
-              <h3
-                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
-              >
-                World Record Broken in 100M Freestyle Final
-              </h3>
-              <p class="text-sm text-gray-600">Olympic Channel</p>
-              <p class="text-xs text-gray-500">1.9M views • 1 month ago</p>
-            </div>
-          </div>
-
-          <!-- Card 11 -->
-          <div class="video-card group cursor-pointer">
-            <div
-              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
-            >
-              <iframe
-                class="w-full h-full transition duration-500"
-                src="https://www.youtube.com/embed/YD13-1LyRlQ"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="pt-3 px-1 space-y-1">
-              <h3
-                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
-              >
-                Winning the Phnom Penh Marathon: Athlete Interview
-              </h3>
-              <p class="text-sm text-gray-600">Local Legends</p>
-              <p class="text-xs text-gray-500">45K views • 2 days ago</p>
-            </div>
-          </div>
-
-          <!-- Card 12 -->
-          <div class="video-card group cursor-pointer">
-            <div
-              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
-            >
-              <iframe
-                class="w-full h-full transition duration-500"
-                src="https://www.youtube.com/embed/3UcV3jPZBC8"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="pt-3 px-1 space-y-1">
-              <h3
-                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
-              >
-                ICC World Cup Final: Best Moments and Match Analysis
-              </h3>
-              <p class="text-sm text-gray-600">Cricket Global</p>
-              <p class="text-xs text-gray-500">12.2M views • 1 month ago</p>
-            </div>
-          </div>
-
-          <!-- END OF UPGRADED VIDEO CARD TEMPLATE -->
         </div>
-        <div class="text-center mt-10">
-          <a
-            href="#"
-            class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-12 rounded-full inline-flex items-center gap-2 transition transform hover:scale-105"
-          >
-            LOAD MORE VIDEOS
-            <svg
-              class="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </a>
-        </div>
-      </section>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -1049,14 +853,14 @@
               </li>
               <li>
                 <a
-                  href="investigations.html"
+                  href="#"
                   class="hover:text-white transition hover:translate-x-2 inline-block duration-300"
                   >🔍 Investigations</a
                 >
               </li>
               <li>
                 <a
-                  href="business.html"
+                  href="#"
                   class="hover:text-white transition hover:translate-x-2 inline-block duration-300"
                   >💼 Business</a
                 >
@@ -1093,14 +897,14 @@
               </li>
               <li>
                 <a
-                  href="entertainment.html"
+                  href="#"
                   class="hover:text-white transition hover:translate-x-2 inline-block duration-300"
                   >🎬 Entertainment</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="sports.html"
                   class="hover:text-white transition hover:translate-x-2 inline-block duration-300"
                   >⚽ Sports</a
                 >
@@ -1172,9 +976,8 @@
                   <div class="text-left">
                     <div class="text-xs text-gray-400">Download on the</div>
                     <div class="text-sm font-black">App Store</div>
-                  </div>
-                </a>
-                <a
+                  </div> </a
+                ><a
                   href="#"
                   class="bg-black hover:bg-gray-800 px-5 py-3 rounded-xl text-xs font-bold transition inline-flex items-center gap-3 border border-gray-700 hover:border-gray-600"
                 >
@@ -1247,7 +1050,6 @@
       </div>
     </footer>
 
-    <!-- JavaScript (Kept as is - already clean) -->
     <script>
       const menuButton = document.getElementById("menuButton");
       const closeMenu = document.getElementById("closeMenu");
@@ -1297,7 +1099,7 @@
         }
       });
 
-      // Add smooth scroll behavior (Kept for completeness)
+      // Add smooth scroll behavior
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
