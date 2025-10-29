@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Romdoul-News - Breaking News & Latest Updates</title>
+    <title>Romdoul-News - Sports Center</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="sports.css" />
+    <link rel="stylesheet" href="video.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -144,7 +144,7 @@
           </a>
 
           <a
-            href="#"
+            href="sports.html"
             class="sidebar-item flex items-center gap-4 text-white px-5 py-4 rounded-xl group"
           >
             <svg
@@ -170,7 +170,7 @@
           </a>
 
           <a
-            href="sport/sports.html"
+            href="#"
             class="sidebar-item flex items-center gap-4 text-white px-5 py-4 rounded-xl group"
           >
             <svg
@@ -363,7 +363,7 @@
             <li>
               <a
                 href="Video.html"
-                class="hover:text-red-400 transition whitespace-nowrap"
+                class="text-red-400 transition whitespace-nowrap"
                 >VIDEO</a
               >
             </li>
@@ -376,8 +376,8 @@
             </li>
             <li>
               <a
-                href="sport/sports.html"
-                class="text-red-400 transition whitespace-nowrap"
+                href="sports.html"
+                class="hover:text-red-400 transition whitespace-nowrap"
                 >SPORTS</a
               >
             </li>
@@ -420,7 +420,7 @@
               >Local Politics</a
             >
             <a
-              href="#"
+              href="sports.html"
               class="hover:text-yellow-400 transition whitespace-nowrap"
               >Sports Highlights</a
             >
@@ -431,59 +431,65 @@
         </div>
       </div>
     </header>
-
     <!-- Main Content - SPORTS NEWS PAGE -->
     <main class="container mx-auto px-4 py-10">
       <!-- Hero Featured Match -->
       <section class="featured-match mb-16 animate-fade-in-up">
-       <div
-  class="relative overflow-hidden rounded-3xl shadow-2xl h-[600px] bg-gradient-to-br from-gray-900 via-black to-red-900"
->
-  <!-- Replace image with video -->
-  <iframe
-    class="absolute inset-0 w-full h-full object-cover"
-    src="https://www.youtube.com/embed/JokmaXB3vqI?autoplay=1&mute=1&loop=1&playlist=JokmaXB3vqI"
-    title="El Clásico: Real Madrid vs Barcelona"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
+        <div
+          class="relative overflow-hidden rounded-3xl shadow-2xl h-[600px] bg-gradient-to-br from-gray-900 via-black to-red-900"
+        >
+          <!-- Replace image with video -->
+          <iframe
+            class="absolute inset-0 w-full h-full object-cover"
+            src="https://www.youtube.com/embed/JokmaXB3vqI?autoplay=1&mute=1&loop=1&playlist=JokmaXB3vqI"
+            title="El Clásico: Real Madrid vs Barcelona"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
 
-  <!-- Overlay gradient -->
-  <div
-    class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"
-  ></div>
+          <!-- Overlay gradient -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"
+          ></div>
 
-  <!-- Text content -->
-  <div class="absolute bottom-0 left-0 right-0 p-10 text-white">
-    <div class="flex items-center gap-4 mb-4">
-      <span
-        class="badge bg-red-600 text-white px-4 py-1 rounded-full font-bold text-sm"
-        >LIVE NOW</span
-      >
-      <span class="text-sm font-bold opacity-90">⏱ 67' - 2ND HALF</span>
-    </div>
-    <h1
-      class="text-6xl font-black headline leading-tight mb-3 group-hover:text-yellow-300 transition"
-    >
-      EL CLÁSICO: Real Madrid 2 - 1 Barcelona
-    </h1>
-    <p class="text-2xl font-medium text-gray-200 mb-6">
-      Vinícius Jr. scores twice as Los Blancos take control at the Bernabéu
-    </p>
-  </div>
-</div>
+          <!-- Text content & Buttons Wrapper -->
+          <div class="absolute bottom-0 left-0 right-0 p-10 text-white">
+            <div class="flex items-center gap-4 mb-4">
+              <span
+                class="badge bg-red-600 text-white px-4 py-1 rounded-full font-bold text-sm uppercase tracking-wider animate-pulse"
+                >LIVE NOW</span
+              >
+              <span
+                class="text-sm font-bold opacity-90 backdrop-blur-sm bg-black/30 px-3 py-1 rounded-full"
+                >⏱ 67' - 2ND HALF</span
+              >
+            </div>
+            <h1
+              class="text-6xl md:text-7xl font-black headline leading-tight mb-4 text-shadow-lg"
+            >
+              EL CLÁSICO: Real Madrid
+              <span class="text-yellow-400">2 - 1</span> Barcelona
+            </h1>
+            <p
+              class="text-xl md:text-2xl font-medium text-gray-200 mb-8 max-w-4xl"
+            >
+              Vinícius Jr. scores twice as Los Blancos take control at the
+              Bernabéu, shaking up the league title race with a dramatic late
+              goal.
+            </p>
 
+            <!-- Buttons for action -->
             <div class="flex gap-4">
               <a
                 href="#"
-                class="btn-live bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-xl flex items-center gap-3 transition transform hover:scale-105"
+                class="btn-live bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-xl flex items-center gap-3 transition transform hover:scale-105 shadow-xl shadow-red-500/50"
               >
                 <span class="live-dot"></span> WATCH LIVE
               </a>
               <a
                 href="#"
-                class="btn-highlights bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white font-bold py-3 px-8 rounded-xl flex items-center gap-3 transition"
+                class="btn-highlights bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white font-bold py-3 px-8 rounded-xl flex items-center gap-3 transition hover:shadow-xl"
               >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M8 5v14l11-7L8 5z" />
@@ -495,52 +501,13 @@
         </div>
       </section>
 
-      <!-- Live Scores Ticker -->
-      <section
-        class="live-scores-ticker mb-12 bg-black text-white py-4 rounded-2xl overflow-hidden shadow-xl"
-      >
-        <div
-          class="flex items-center gap-6 animate-scroll-left whitespace-nowrap"
-        >
-          <span class="font-black text-yellow-400 px-4">LIVE SCORES</span>
-          <div class="flex gap-8 items-center">
-            <div class="text-center">
-              <span class="text-sm opacity-80">Premier League</span>
-              <p class="font-bold text-lg">Man Utd 3-2 Liverpool</p>
-            </div>
-            <span class="text-gray-600">•</span>
-            <div class="text-center">
-              <span class="text-sm opacity-80">La Liga</span>
-              <p class="font-bold text-lg">Real Madrid 2 - 1 FC Barcelona</p>
-            </div>
-            <span class="text-gray-600">•</span>
-            <div class="text-center">
-              <span class="text-sm opacity-80">Serie A</span>
-              <p class="font-bold text-lg">Juventus 2-0 Inter</p>
-            </div>
-            <span class="text-gray-600">•</span>
-            <div class="text-center">
-              <span class="text-sm opacity-80">Cambodia League</span>
-              <p class="font-bold text-lg">
-                Kirivong Sok Sen Chey F.C. 0-2 National Defense Ministry FC
-              </p>
-            </div>
-            <span class="text-gray-600">•</span>
-            <div class="text-center">
-              <span class="text-sm opacity-80">SEA Games Qualifier</span>
-              <p class="font-bold text-lg">Cambodia 4-1 Laos</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- Top Sports Stories -->
       <section class="top-stories mb-16">
         <div class="flex justify-between items-center mb-8">
           <h2 class="text-4xl font-black text-gray-900">Top Sports Stories</h2>
           <a
             href="#"
-            class="text-red-600 font-bold hover:text-redwoven flex items-center gap-2"
+            class="text-red-600 font-bold hover:text-red-800 flex items-center gap-2 transition"
           >
             VIEW ALL
             <svg
@@ -562,7 +529,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Story 1 -->
           <article
-            class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group"
+            class="article-card bg-white rounded-2xl overflow-hidden shadow-lg group"
           >
             <div class="relative h-56 overflow-hidden">
               <img
@@ -575,7 +542,7 @@
             <div class="p-6">
               <span class="category-badge bg-red-600 text-white">LA LIGA</span>
               <h3
-                class="font-bold text-xl mt-3 mb-2 group-hover:text-red-600 transition"
+                class="font-bold text-xl mt-3 mb-2 line-clamp-2 group-hover:text-red-600 transition"
               >
                 Carvajal Out for Season After Knee Surgery
               </h3>
@@ -589,7 +556,7 @@
 
           <!-- Story 2 -->
           <article
-            class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group"
+            class="article-card bg-white rounded-2xl overflow-hidden shadow-lg group"
           >
             <div class="relative h-56 overflow-hidden">
               <img
@@ -603,7 +570,7 @@
                 >CAMBODIA</span
               >
               <h3
-                class="font-bold text-xl mt-3 mb-2 group-hover:text-green-600 transition"
+                class="font-bold text-xl mt-3 mb-2 line-clamp-2 group-hover:text-green-600 transition"
               >
                 Cambodia's Top 5 Sporting Triumphs
               </h3>
@@ -617,7 +584,7 @@
 
           <!-- Story 3 -->
           <article
-            class="article-card bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group"
+            class="article-card bg-white rounded-2xl overflow-hidden shadow-lg group"
           >
             <div class="relative h-56 overflow-hidden">
               <img
@@ -628,654 +595,337 @@
               <div class="play-overlay"></div>
             </div>
             <div class="p-6">
-              <span class="category-badge bg-orange-600 text-white">NBA</span>
+              <span class="category-badge bg-orange-600 text-white">EPL</span>
               <h3
-                class="font-bold text-xl mt-3 mb-2 group-hover:text-orange-600 transition"
+                class="font-bold text-xl mt-3 mb-2 line-clamp-2 group-hover:text-orange-600 transition"
               >
-                Aston Villa defeated Manchester City 1–0
+                Aston Villa Stuns Man City at Villa Park
               </h3>
               <p class="text-gray-600 text-sm leading-relaxed">
-                In their Premier League match at Villa Park on Sunday, October
-                26, 2025. Matty Cash scored the only goal of the game in the
-                19th minute. The loss was Manchester City's first since August
-                and ended their nine-game unbeaten run.
+                Aston Villa defeated Manchester City 1–0. Matty Cash scored the
+                only goal of the game in the 19th minute, ending City's
+                nine-game unbeaten run.
               </p>
               <p class="text-xs text-gray-500 mt-4 font-bold">1 hour ago</p>
             </div>
           </article>
         </div>
       </section>
-      <section class="max-w-7xl mx-auto p-6">
-        <div
-          class="bg-gray-900 text-gray-200 rounded-2xl shadow-2xl overflow-hidden"
-        >
-          <!-- Header -->
-          <div
-            class="flex flex-col sm:flex-row sm:items-center justify-between px-6 py-4 bg-gray-800 border-b border-gray-700 gap-3"
-          >
-            <div class="flex flex-wrap items-center gap-3 text-sm">
-              <select
-                id="leagueSelect"
-                class="bg-gray-700 text-white rounded-lg px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm font-medium"
-              >
-                <option value="premier">Premier League</option>
-                <option value="laliga">La Liga</option>
-                <option value="seriea">Serie A</option>
-                <option value="cleague">C-League (Cambodia)</option>
-              </select>
-              <span class="text-gray-400">Season</span>
-              <select
-                class="bg-gray-700 text-white rounded-lg px-3 py-1.5 focus:outline-none text-sm"
-              >
-                <option>2025-26</option>
-              </select>
-            </div>
-            <a href="#" class="text-xs text-blue-400 hover:underline"
-              >Full Table →</a
-            >
-          </div>
 
-          <!-- Table Header -->
-          <div
-            class="grid grid-cols-12 gap-2 px-6 py-3 text-xs font-bold text-gray-400 border-b border-gray-700"
-          >
-            <div class="col-span-1 text-center">#</div>
-            <div class="col-span-4">Club</div>
-            <div class="col-span-1 text-center">MP</div>
-            <div class="col-span-1 text-center">W</div>
-            <div class="col-span-1 text-center">D</div>
-            <div class="col-span-1 text-center">L</div>
-            <div class="col-span-1 text-center">GF</div>
-            <div class="col-span-1 text-center">GA</div>
-            <div class="col-span-1 text-center">GD</div>
-            <div class="col-span-1 text-center">Pts</div>
-            <div class="col-span-1 text-center">Last 5</div>
-          </div>
-
-          <!-- Table Body (Dynamic) -->
-          <div id="standingsBody" class="text-sm"></div>
-
-          <!-- Legend -->
-          <div
-            id="legend"
-            class="flex flex-wrap items-center justify-center gap-4 px-6 py-4 text-xs border-t border-gray-700"
-          ></div>
-        </div>
-      </section>
-
-      <script>
-        /* ============================================================= */
-        /*  1. LOGO MAP – real club logos (SVG/PNG)                     */
-        /* ============================================================= */
-        const logos = {
-          premier: {
-            Arsenal:
-              "https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg",
-            Bournemouth:
-              "https://upload.wikimedia.org/wikipedia/en/e/e5/AFC_Bournemouth_%282019%29.svg",
-            Tottenham:
-              "https://upload.wikimedia.org/wikipedia/en/b/b4/Tottenham_Hotspur.svg",
-            "Nottingham Forest":
-              "https://upload.wikimedia.org/wikipedia/en/e/e5/Nottingham_Forest_F.C._logo.svg",
-            "West Ham":
-              "https://upload.wikimedia.org/wikipedia/en/c/c2/West_Ham_United_FC_logo.svg",
-            Wolves:
-              "https://upload.wikimedia.org/wikipedia/en/f/fc/Wolverhampton_Wanderers.svg",
-          },
-          laliga: {
-            Barcelona:
-              "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg",
-            "Real Madrid":
-              "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg",
-            "Atlético Madrid":
-              "https://upload.wikimedia.org/wikipedia/en/f/f7/Atletico_Madrid_2017_logo.svg",
-            "Las Palmas":
-              "https://upload.wikimedia.org/wikipedia/en/0/0c/UD_Las_Palmas_logo.svg",
-            Valencia:
-              "https://upload.wikimedia.org/wikipedia/en/c/ce/Valencia_CF.svg",
-            Leganés:
-              "https://upload.wikimedia.org/wikipedia/en/0/0b/CD_Legan%C3%A9s_logo.svg",
-          },
-          seriea: {
-            Napoli:
-              "https://upload.wikimedia.org/wikipedia/en/c/ce/S.S.C._Napoli_logo.svg",
-            Inter:
-              "https://upload.wikimedia.org/wikipedia/en/4/40/Inter_Milan.svg",
-            Juventus:
-              "https://upload.wikimedia.org/wikipedia/en/9/9a/Juventus_FC_2017_icon_%28black%29.svg",
-            Monza:
-              "https://upload.wikimedia.org/wikipedia/en/9/9c/AC_Monza_logo.svg",
-            Cagliari:
-              "https://upload.wikimedia.org/wikipedia/en/9/9f/Cagliari_Calcio_1920.svg",
-            Venezia:
-              "https://upload.wikimedia.org/wikipedia/en/6/6c/Venezia_FC_logo.svg",
-          },
-          cleague: {
-            "Phnom Penh Crown":
-              "https://upload.wikimedia.org/wikipedia/en/2/2c/Phnom_Penh_Crown_FC_logo.svg",
-            "Visakha FC":
-              "https://upload.wikimedia.org/wikipedia/en/2/2c/Visakha_FC_logo.svg",
-            "Svay Rieng":
-              "https://upload.wikimedia.org/wikipedia/en/8/8c/Preah_Khan_Reach_Svay_Rieng_FC_logo.svg",
-          },
-        };
-
-        /* ============================================================= */
-        /*  2. LEAGUE DATA (unchanged except logo reference)           */
-        /* ============================================================= */
-        const leagues = {
-          premier: {
-            name: "Premier League",
-            flag: "gb",
-            rows: [
-              {
-                pos: 1,
-                club: "Arsenal",
-                mp: 9,
-                w: 7,
-                d: 1,
-                l: 1,
-                gf: 16,
-                ga: 3,
-                gd: "+13",
-                pts: 22,
-                last5: ["W", "W", "W", "W", "W"],
-              },
-              {
-                pos: 2,
-                club: "Bournemouth",
-                mp: 9,
-                w: 5,
-                d: 3,
-                l: 1,
-                gf: 16,
-                ga: 11,
-                gd: "+5",
-                pts: 18,
-                last5: ["W", "W", "W", "D", "W"],
-              },
-              {
-                pos: 3,
-                club: "Tottenham",
-                mp: 9,
-                w: 5,
-                d: 2,
-                l: 2,
-                gf: 17,
-                ga: 7,
-                gd: "+10",
-                pts: 17,
-                last5: ["W", "L", "W", "D", "L"],
-              },
-              {
-                pos: 18,
-                club: "Nottingham Forest",
-                mp: 9,
-                w: 1,
-                d: 2,
-                l: 6,
-                gf: 5,
-                ga: 17,
-                gd: "-12",
-                pts: 5,
-                last5: ["L", "L", "L", "L", "L"],
-                relegation: true,
-              },
-              {
-                pos: 19,
-                club: "West Ham",
-                mp: 9,
-                w: 1,
-                d: 1,
-                l: 7,
-                gf: 7,
-                ga: 20,
-                gd: "-13",
-                pts: 4,
-                last5: ["L", "L", "L", "L", "L"],
-                relegation: true,
-              },
-              {
-                pos: 20,
-                club: "Wolves",
-                mp: 9,
-                w: 0,
-                d: 2,
-                l: 7,
-                gf: 7,
-                ga: 19,
-                gd: "-12",
-                pts: 2,
-                last5: ["L", "L", "D", "L", "L"],
-                relegation: true,
-              },
-            ],
-            legend: [
-              { color: "bg-blue-500", text: "UEFA Champions League" },
-              { color: "bg-sky-500", text: "UEFA Europa League" },
-              { color: "bg-orange-500", text: "Relegation" },
-            ],
-          },
-
-          laliga: {
-            name: "La Liga",
-            flag: "es",
-            rows: [
-              {
-                pos: 1,
-                club: "Barcelona",
-                mp: 11,
-                w: 9,
-                d: 1,
-                l: 1,
-                gf: 29,
-                ga: 9,
-                gd: "+20",
-                pts: 28,
-                last5: ["W", "W", "D", "W", "W"],
-              },
-              {
-                pos: 2,
-                club: "Real Madrid",
-                mp: 11,
-                w: 7,
-                d: 3,
-                l: 1,
-                gf: 21,
-                ga: 11,
-                gd: "+10",
-                pts: 24,
-                last5: ["D", "W", "W", "W", "L"],
-              },
-              {
-                pos: 3,
-                club: "Atlético Madrid",
-                mp: 11,
-                w: 6,
-                d: 4,
-                l: 1,
-                gf: 18,
-                ga: 8,
-                gd: "+10",
-                pts: 22,
-                last5: ["W", "D", "W", "D", "W"],
-              },
-              {
-                pos: 18,
-                club: "Las Palmas",
-                mp: 11,
-                w: 1,
-                d: 3,
-                l: 7,
-                gf: 11,
-                ga: 21,
-                gd: "-10",
-                pts: 6,
-                last5: ["L", "L", "D", "L", "L"],
-                relegation: true,
-              },
-              {
-                pos: 19,
-                club: "Valencia",
-                mp: 11,
-                w: 1,
-                d: 3,
-                l: 7,
-                gf: 8,
-                ga: 19,
-                gd: "-11",
-                pts: 6,
-                last5: ["L", "D", "L", "L", "L"],
-                relegation: true,
-              },
-              {
-                pos: 20,
-                club: "Leganés",
-                mp: 11,
-                w: 1,
-                d: 2,
-                l: 8,
-                gf: 6,
-                ga: 18,
-                gd: "-12",
-                pts: 5,
-                last5: ["L", "L", "L", "D", "L"],
-                relegation: true,
-              },
-            ],
-            legend: [
-              { color: "bg-blue-500", text: "UEFA Champions League" },
-              { color: "bg-sky-500", text: "UEFA Europa League" },
-              { color: "bg-purple-500", text: "Conference League" },
-              { color: "bg-orange-500", text: "Relegation" },
-            ],
-          },
-
-          seriea: {
-            name: "Serie A",
-            flag: "it",
-            rows: [
-              {
-                pos: 1,
-                club: "Napoli",
-                mp: 9,
-                w: 7,
-                d: 1,
-                l: 1,
-                gf: 18,
-                ga: 6,
-                gd: "+12",
-                pts: 22,
-                last5: ["W", "W", "W", "D", "W"],
-              },
-              {
-                pos: 2,
-                club: "Inter",
-                mp: 9,
-                w: 6,
-                d: 2,
-                l: 1,
-                gf: 21,
-                ga: 9,
-                gd: "+12",
-                pts: 20,
-                last5: ["W", "D", "W", "W", "L"],
-              },
-              {
-                pos: 3,
-                club: "Juventus",
-                mp: 9,
-                w: 5,
-                d: 4,
-                l: 0,
-                gf: 13,
-                ga: 4,
-                gd: "+9",
-                pts: 19,
-                last5: ["D", "W", "D", "W", "W"],
-              },
-              {
-                pos: 18,
-                club: "Monza",
-                mp: 9,
-                w: 1,
-                d: 3,
-                l: 5,
-                gf: 7,
-                ga: 14,
-                gd: "-7",
-                pts: 6,
-                last5: ["L", "D", "L", "L", "D"],
-                relegation: true,
-              },
-              {
-                pos: 19,
-                club: "Cagliari",
-                mp: 9,
-                w: 1,
-                d: 2,
-                l: 6,
-                gf: 5,
-                ga: 16,
-                gd: "-11",
-                pts: 5,
-                last5: ["L", "L", "L", "D", "L"],
-                relegation: true,
-              },
-              {
-                pos: 20,
-                club: "Venezia",
-                mp: 9,
-                w: 1,
-                d: 1,
-                l: 7,
-                gf: 5,
-                ga: 17,
-                gd: "-12",
-                pts: 4,
-                last5: ["L", "L", "W", "L", "L"],
-                relegation: true,
-              },
-            ],
-            legend: [
-              { color: "bg-blue-500", text: "UEFA Champions League" },
-              { color: "bg-sky-500", text: "UEFA Europa League" },
-              { color: "bg-purple-500", text: "Conference League" },
-              { color: "bg-orange-500", text: "Relegation" },
-            ],
-          },
-
-          cleague: {
-            name: "C-League",
-            flag: "kh",
-            rows: [
-              {
-                pos: 1,
-                club: "Phnom Penh Crown",
-                mp: 15,
-                w: 10,
-                d: 4,
-                l: 1,
-                gf: 32,
-                ga: 10,
-                gd: "+22",
-                pts: 34,
-                last5: ["W", "W", "D", "W", "W"],
-              },
-              {
-                pos: 2,
-                club: "Visakha FC",
-                mp: 15,
-                w: 9,
-                d: 3,
-                l: 3,
-                gf: 28,
-                ga: 13,
-                gd: "+15",
-                pts: 30,
-                last5: ["W", "L", "W", "W", "D"],
-              },
-              {
-                pos: 3,
-                club: "Svay Rieng",
-                mp: 15,
-                w: 8,
-                d: 4,
-                l: 3,
-                gf: 30,
-                ga: 15,
-                gd: "+15",
-                pts: 28,
-                last5: ["D", "W", "W", "L", "W"],
-              },
-            ],
-            legend: [
-              { color: "bg-yellow-500", text: "Champions" },
-              { color: "bg-sky-500", text: "AFC Cup" },
-            ],
-          },
-        };
-
-        /* ============================================================= */
-        /*  3. RENDER ENGINE                                            */
-        /* ============================================================= */
-        const standingsBody = document.getElementById("standingsBody");
-        const legendDiv = document.getElementById("legend");
-        const leagueSelect = document.getElementById("leagueSelect");
-
-        function renderLeague(key) {
-          const league = leagues[key];
-          if (!league) return;
-
-          // ---- clear ----
-          standingsBody.innerHTML = "";
-          legendDiv.innerHTML = "";
-
-          // ---- rows ----
-          league.rows.forEach((row) => {
-            const isRelegation = row.relegation
-              ? "bg-red-950/30 hover:bg-red-900/40"
-              : "";
-            const gdColor = row.gd.startsWith("+")
-              ? "text-green-400"
-              : "text-red-400";
-
-            // logo (fallback to a generic badge)
-            const logoUrl =
-              logos[key] && logos[key][row.club]
-                ? logos[key][row.club]
-                : "https://via.placeholder.com/40x40/333333/FFFFFF?text=CLUB";
-
-            const last5HTML = row.last5
-              .map((r) => {
-                const bg =
-                  r === "W"
-                    ? "bg-green-500 text-white"
-                    : r === "D"
-                    ? "bg-yellow-500 text-black"
-                    : "bg-red-500 text-white";
-                return `<span class="w-6 h-6 rounded-full ${bg} flex items-center justify-center text-xs font-bold">${r}</span>`;
-              })
-              .join("");
-
-            standingsBody.innerHTML += `
-      <div class="grid grid-cols-12 gap-2 px-6 py-3 border-b border-gray-800 hover-row transition ${isRelegation}">
-        <div class="col-span-1 text-center font-bold text-white">${row.pos}</div>
-        <div class="col-span-4 flex items-center gap-2">
-          <img src="${logoUrl}" alt="${row.club}" class="w-7 h-7 object-contain">
-          <span class="font-semibold">${row.club}</span>
-        </div>
-        <div class="col-span-1 text-center">${row.mp}</div>
-        <div class="col-span-1 text-center">${row.w}</div>
-        <div class="col-span-1 text-center">${row.d}</div>
-        <div class="col-span-1 text-center">${row.l}</div>
-        <div class="col-span-1 text-center">${row.gf}</div>
-        <div class="col-span-1 text-center">${row.ga}</div>
-        <div class="col-span-1 text-center font-bold ${gdColor}">${row.gd}</div>
-        <div class="col-span-1 text-center font-bold text-white">${row.pts}</div>
-        <div class="col-span-1 flex justify-center gap-1 last-5">${last5HTML}</div>
-      </div>`;
-          });
-
-          // ---- legend (last-5 + league-specific) ----
-          const last5Legend = `
-    <div class="flex items-center gap-2">
-      <span>Last 5:</span>
-      ${["W", "D", "L"]
-        .map((r) => {
-          const bg =
-            r === "W"
-              ? "bg-green-500 text-white"
-              : r === "D"
-              ? "bg-yellow-500 text-black"
-              : "bg-red-500 text-white";
-          return `<div class="flex items-center gap-1 ml-2">
-                  <span class="w-4 h-4 rounded-full ${bg} flex items-center justify-center text-xs font-bold">${r}</span>
-                  <span>${
-                    r === "W" ? "Win" : r === "D" ? "Draw" : "Loss"
-                  }</span>
-                </div>`;
-        })
-        .join("")}
-    </div>`;
-
-          legendDiv.innerHTML = last5Legend;
-
-          league.legend.forEach((item) => {
-            legendDiv.innerHTML =
-              `
-      <div class="flex items-center gap-2">
-        <div class="w-3 h-3 rounded-full ${item.color}"></div>
-        <span>${item.text}</span>
-      </div>` + legendDiv.innerHTML;
-          });
-        }
-
-        /* ============================================================= */
-        /*  4. INITIALISE + LISTENER                                    */
-        /* ============================================================= */
-        renderLeague("premier");
-        leagueSelect.addEventListener("change", (e) =>
-          renderLeague(e.target.value)
-        );
-      </script>
-
-      <!-- Video Highlights -->
+      <!-- Video Highlights - UPGRADED TO YOUTUBE-STYLE GRID -->
       <section class="video-highlights mb-16">
         <h2 class="text-4xl font-black text-gray-900 mb-8">Video Highlights</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Upgraded grid to 4 columns on large screens for a denser, modern look -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- START OF UPGRADED VIDEO CARD TEMPLATE (12 Total) -->
+
+          <!-- Card 1 -->
           <div class="video-card group cursor-pointer">
-            <div class="relative rounded-2xl overflow-hidden shadow-lg">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
+            >
               <img
                 src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg"
                 alt="Goal of the Week"
-                class="w-full h-48 object-cover group-hover:scale-105 transition"
+                class="w-full h-full object-cover transition duration-500"
               />
               <div class="play-button large"></div>
-              <div
-                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4"
+              <!-- Video Duration Badge -->
+              <span
+                class="absolute bottom-2 right-2 bg-black/80 text-white text-xs font-semibold px-2 py-0.5 rounded-md"
+                >4:32</span
               >
-                <p class="text-white font-bold">
-                  GOAL OF THE WEEK: 35-Yard Screamer!
-                </p>
-              </div>
+            </div>
+            <!-- Video Metadata -->
+            <div class="pt-3 px-1 space-y-1">
+              <h3
+                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
+              >
+                GOAL OF THE WEEK: 35-Yard Screamer vs Man United
+              </h3>
+              <p class="text-sm text-gray-600">The Football Studio</p>
+              <p class="text-xs text-gray-500">1.2M views • 2 hours ago</p>
             </div>
           </div>
+
+          <!-- Card 2 -->
           <div class="video-card group cursor-pointer">
-            <div class="relative rounded-2xl overflow-hidden shadow-lg">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
+            >
               <img
                 src="https://i.ytimg.com/vi/9bZkp7q19f0/maxresdefault.jpg"
                 alt="Save of the Season"
-                class="w-full h-48 object-cover group-hover:scale-105 transition"
+                class="w-full h-full object-cover transition duration-500"
               />
               <div class="play-button large"></div>
-              <div
-                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4"
+              <span
+                class="absolute bottom-2 right-2 bg-black/80 text-white text-xs font-semibold px-2 py-0.5 rounded-md"
+                >11:05</span
               >
-                <p class="text-white font-bold">
-                  SAVE OF THE SEASON: Impossible Reflex
-                </p>
-              </div>
+            </div>
+            <div class="pt-3 px-1 space-y-1">
+              <h3
+                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
+              >
+                SAVE OF THE SEASON: Impossible Reflex Double Save
+              </h3>
+              <p class="text-sm text-gray-600">Goalkeeper World</p>
+              <p class="text-xs text-gray-500">240K views • 1 day ago</p>
             </div>
           </div>
+
+          <!-- Card 3 -->
           <div class="video-card group cursor-pointer">
-            <div class="relative rounded-2xl overflow-hidden shadow-lg">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
+            >
               <img
                 src="https://i.ytimg.com/vi/kJQP7kiw5Fk/maxresdefault.jpg"
                 alt="Cambodia U23"
-                class="w-full h-48 object-cover group-hover:scale-105 transition"
+                class="w-full h-full object-cover transition duration-500"
               />
               <div class="play-button large"></div>
-              <div
-                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4"
+              <span
+                class="absolute bottom-2 right-2 bg-black/80 text-white text-xs font-semibold px-2 py-0.5 rounded-md"
+                >8:19</span
               >
-                <p class="text-white font-bold">
-                  Cambodia U23: Road to SEA Games Glory
-                </p>
-              </div>
+            </div>
+            <div class="pt-3 px-1 space-y-1">
+              <h3
+                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
+              >
+                Cambodia U23: Road to SEA Games Glory - Full Docu
+              </h3>
+              <p class="text-sm text-gray-600">Khmer Sports TV</p>
+              <p class="text-xs text-gray-500">8.5M views • 3 weeks ago</p>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Cambodia Sports Spotlight -->
-      <section
-        class="cambodia-spotlight bg-gradient-to-r from-red-50 to-yellow-50 rounded-3xl p-10 mb-16"
-      >
-        <div class="flex justify-between items-center mb-8">
-          <h2 class="text-4xl font-black text-gray-900 flex items-center gap-3">
-            <img
-              src="https://flagcdn.com/w40/kh.png"
-              alt="Cambodia"
-              class="w-10 h-7 rounded shadow"
-            />
-            Cambodia Sports
-          </h2>
+          <!-- Card 4 - Fixed iframe -->
+          <div class="video-card group cursor-pointer">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
+            >
+              <iframe
+                class="w-full h-full transition duration-500"
+                src="https://www.youtube.com/embed/K_Ks7NK1DFU?si=Njic8V-EL43jiTeQ"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="pt-3 px-1 space-y-1">
+              <h3
+                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
+              >
+                NBA Top 10 Dunks of the Decade (Official)
+              </h3>
+              <p class="text-sm text-gray-600">NBA</p>
+              <p class="text-xs text-gray-500">30M views • 1 year ago</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="video-card group cursor-pointer">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
+            >
+              <iframe
+                class="w-full h-full transition duration-500"
+                src="https://www.youtube.com/embed/PfvdUAaBQYc"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="pt-3 px-1 space-y-1">
+              <h3
+                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
+              >
+                BRUTAL FINISHES: Top 10 UFC Knockouts of 2024
+              </h3>
+              <p class="text-sm text-gray-600">UFC Official</p>
+              <p class="text-xs text-gray-500">5.1M views • 4 days ago</p>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="video-card group cursor-pointer">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
+            >
+              <iframe
+                class="w-full h-full transition duration-500"
+                src="https://www.youtube.com/embed/WNcycoawhBI"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="pt-3 px-1 space-y-1">
+              <h3
+                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
+              >
+                Controversial Finish: F1 Final Lap Chaos at Monaco
+              </h3>
+              <p class="text-sm text-gray-600">Motorsport HQ</p>
+              <p class="text-xs text-gray-500">72K views • 3 hours ago</p>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="video-card group cursor-pointer">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
+            >
+              <iframe
+                class="w-full h-full transition duration-500"
+                src="https://www.youtube.com/embed/jFF8FSPPoNQ"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="pt-3 px-1 space-y-1">
+              <h3
+                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
+              >
+                Unbelievable Rally: Djokovic vs Nadal US Open Final
+              </h3>
+              <p class="text-sm text-gray-600">Tennis Majors</p>
+              <p class="text-xs text-gray-500">990K views • 2 months ago</p>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="video-card group cursor-pointer">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
+            >
+              <iframe
+                class="w-full h-full transition duration-500"
+                src="https://www.youtube.com/embed/NqdCusxmUFE"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="pt-3 px-1 space-y-1">
+              <h3
+                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
+              >
+                FULL MATCH: World Esports League Grand Finals
+              </h3>
+              <p class="text-sm text-gray-600">Gaming Arena</p>
+              <p class="text-xs text-gray-500">4.5M views • 1 week ago</p>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="video-card group cursor-pointer">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
+            >
+              <iframe
+                class="w-full h-full transition duration-500"
+                src="https://www.youtube.com/embed/0Hcjgd8ETNY"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="pt-3 px-1 space-y-1">
+              <h3
+                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
+              >
+                Lionel Messi's Top 5 Greatest Free Kicks Ever
+              </h3>
+              <p class="text-sm text-gray-600">GOAT Highlights</p>
+              <p class="text-xs text-gray-500">18M views • 6 months ago</p>
+            </div>
+          </div>
+
+          <!-- Card 10 -->
+          <div class="video-card group cursor-pointer">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
+            >
+              <iframe
+                class="w-full h-full transition duration-500"
+                src="https://www.youtube.com/embed/JjNtYuG920Q"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="pt-3 px-1 space-y-1">
+              <h3
+                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
+              >
+                World Record Broken in 100M Freestyle Final
+              </h3>
+              <p class="text-sm text-gray-600">Olympic Channel</p>
+              <p class="text-xs text-gray-500">1.9M views • 1 month ago</p>
+            </div>
+          </div>
+
+          <!-- Card 11 -->
+          <div class="video-card group cursor-pointer">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
+            >
+              <iframe
+                class="w-full h-full transition duration-500"
+                src="https://www.youtube.com/embed/YD13-1LyRlQ"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="pt-3 px-1 space-y-1">
+              <h3
+                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
+              >
+                Winning the Phnom Penh Marathon: Athlete Interview
+              </h3>
+              <p class="text-sm text-gray-600">Local Legends</p>
+              <p class="text-xs text-gray-500">45K views • 2 days ago</p>
+            </div>
+          </div>
+
+          <!-- Card 12 -->
+          <div class="video-card group cursor-pointer">
+            <div
+              class="relative rounded-xl overflow-hidden shadow-xl aspect-video"
+            >
+              <iframe
+                class="w-full h-full transition duration-500"
+                src="https://www.youtube.com/embed/3UcV3jPZBC8"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="pt-3 px-1 space-y-1">
+              <h3
+                class="font-bold text-gray-900 line-clamp-2 group-hover:text-red-600 transition"
+              >
+                ICC World Cup Final: Best Moments and Match Analysis
+              </h3>
+              <p class="text-sm text-gray-600">Cricket Global</p>
+              <p class="text-xs text-gray-500">12.2M views • 1 month ago</p>
+            </div>
+          </div>
+
+          <!-- END OF UPGRADED VIDEO CARD TEMPLATE -->
+        </div>
+        <div class="text-center mt-10">
           <a
             href="#"
-            class="text-red-600 font-bold hover:underline flex items-center gap-2"
+            class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-12 rounded-full inline-flex items-center gap-2 transition transform hover:scale-105"
           >
-            MORE LOCAL SPORTS
+            LOAD MORE VIDEOS
             <svg
               class="w-5 h-5"
               fill="none"
@@ -1286,109 +936,10 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M9 5l7 7-7 7"
+                d="M19 9l-7 7-7-7"
               />
             </svg>
           </a>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-white p-6 rounded-2xl shadow-md">
-            <h3 class="font-bold text-xl mb-3">
-              National Football Team Prepares for AFF Suzuki Cup
-            </h3>
-            <p class="text-gray-700 mb-4">
-              New Japanese coach implements high-pressing style as Cambodia aims
-              for semifinal berth.
-            </p>
-            <p class="text-xs font-bold text-gray-500">
-              Training Camp • Phnom Penh
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-2xl shadow-md">
-            <h3 class="font-bold text-xl mb-3">
-              Kun Khmer Star Promoted to World #3
-            </h3>
-            <p class="text-gray-700 mb-4">
-              Thoeun Theara defeats Thai champion in Bangkok, eyes world title
-              shot in 2026.
-            </p>
-            <p class="text-xs font-bold text-gray-500">
-              International Ranking • WKN
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Upcoming Matches -->
-      <section class="upcoming-matches">
-        <h2 class="text-4xl font-black text-gray-900 mb-8">Upcoming Matches</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div
-            class="match-card bg-white rounded-2xl shadow-lg p-6 flex items-center justify-between hover:shadow-xl transition"
-          >
-            <div class="flex items-center gap-4">
-              <div class="text-center">
-                <p class="text-xs text-gray-500">Nov 1</p>
-                <p class="font-black text-2xl">19:00</p>
-              </div>
-              <div class="flex-1">
-                <div class="flex items-center justify-between">
-                  <div class="text-right">
-                    <p class="font-bold">Phnom Penh Crown</p>
-                    <img
-                      src="https://flagcdn.com/w40/kh.png"
-                      alt="Cambodia"
-                      class="w-8 h-5 mx-auto mt-1"
-                    />
-                  </div>
-                  <span class="mx-4 font-bold text-gray-400">VS</span>
-                  <div class="text-left">
-                    <p class="font-bold">Visakha FC</p>
-                    <img
-                      src="https://flagcdn.com/w40/kh.png"
-                      alt="Cambodia"
-                      class="w-8 h-5 mx-auto mt-1"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a href="#" class="text-red-600 font-bold text-sm">LIVE →</a>
-          </div>
-
-          <div
-            class="match-card bg-white rounded-2xl shadow-lg p-6 flex items-center justify-between hover:shadow-xl transition"
-          >
-            <div class="flex items-center gap-4">
-              <div class="text-center">
-                <p class="text-xs text-gray-500">Nov 2</p>
-                <p class="font-black text-2xl">02:45</p>
-              </div>
-              <div class="flex-1">
-                <div class="flex items-center justify-between">
-                  <div class="text-right">
-                    <p class="font-bold">Real Madrid</p>
-                    <img
-                      src="https://flagcdn.com/w40/es.png"
-                      alt="Spain"
-                      class="w-8 h-5 mx-auto mt-1"
-                    />
-                  </div>
-                  <span class="mx-4 font-bold text-gray-400">VS</span>
-                  <div class="text-left">
-                    <p class="font-bold">AC Milan</p>
-                    <img
-                      src="https://flagcdn.com/w40/it.png"
-                      alt="Italy"
-                      class="w-8 h-5 mx-auto mt-1"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a href="#" class="text-red-600 font-bold text-sm">WATCH →</a>
-          </div>
         </div>
       </section>
     </main>
@@ -1451,7 +1002,7 @@
               >
                 <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
                   <path
-                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
                   />
                 </svg>
               </a>
@@ -1696,6 +1247,7 @@
       </div>
     </footer>
 
+    <!-- JavaScript (Kept as is - already clean) -->
     <script>
       const menuButton = document.getElementById("menuButton");
       const closeMenu = document.getElementById("closeMenu");
@@ -1745,7 +1297,7 @@
         }
       });
 
-      // Add smooth scroll behavior
+      // Add smooth scroll behavior (Kept for completeness)
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();

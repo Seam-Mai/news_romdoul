@@ -380,6 +380,21 @@ body {
   border-radius: 50%;
   animation: blink 1.5s infinite;
 }
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-scroll-left > div {
+  display: inline-flex;
+  animation: scroll-left 30s linear infinite;
+}
+.animate-scroll-left:hover > div {
+  animation-play-state: paused;
+}
 
 @keyframes blink {
   0%,
